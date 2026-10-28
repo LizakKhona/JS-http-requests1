@@ -1,13 +1,18 @@
-<h2>{}</h2>
-<div>
+{{#each this}}
+<h2 class="title">{{names.common}}</h2>
+<div class="container">
     <div>
-        <p>Capital: {}</p>
-        <p>Population: {}</p>
+        {{#with capitals.[0]}}
+            <p><b>Capital:</b> {{name}}</p>
+        {{/with}}
+        <p><b>Population:</b> {{population}}</p>
+        <p><b>Languages:</b></p>
         <ul>
-            <li>{}</li>
-            <li>{}</li>
-            <li>{}</li>
+            {{#each languages}}
+            <li>{{name}}</li>
+            {{/each}}
         </ul>
     </div>
-    <img src={} alt={} width="200" height="150">
+    <img src={{flag.url_png}} alt={{flag.description}} width="200" height="150">
 </div>
+{{/each}}

@@ -1,0 +1,47 @@
+*, 
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(238, 235, 235);
+}
+
+.pnotify-container {
+    position: absolute;
+  top: 20px;
+  right: 20px;
+  display: block;
+  width: 350px !important;
+  padding: 10px !important;
+}
+ .heading {
+    text-align: center;
+ }
+.thumb {
+    width: 500px;
+    margin: 0 auto;
+}
+.input {
+    display: block;
+    width: 400px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+.title {
+    text-align: center;
+}
+.container {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.countriesList {
+    padding-left: 30px;
+     width: 400px;
+    margin: 13px auto 0;
+}
