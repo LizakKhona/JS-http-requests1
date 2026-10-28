@@ -1,13 +1,15 @@
-<h2>Switzerland</h2>
+{{#each this}}
+<h2>{{names.common}}</h2>
 <div>
     <div>
-        <p>Capital: Bern</p>
-        <p>Population: 8383748</p>
+        <p>Capital: {{capitals[0].name}}</p>
+        <p>Population: {{population}}</p>
         <ul>
-            <li>German</li>
-            <li>French</li>
-            <li>Italian</li>
+            {{#each languages}}
+            <li>{{name}}</li>
+            {{/each}}
         </ul>
     </div>
-    <img src="https://flags.restcountries.com/v5/w640/pl.png" alt="flag" width="200" height="150">
+    <img src={{flag.url_png}} alt={{flag.description}} width="200" height="150">
 </div>
+{{}}
