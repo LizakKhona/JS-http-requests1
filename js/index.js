@@ -43,7 +43,7 @@ function result(array) {
         countriesList.innerHTML = ""
         const myError = error({
           text: "Too many matches found. Please enter a more specific query",
-          delay: 40000,
+          delay: 3000,
           width: "280px",
           addClass: "errorNotif",
         });
